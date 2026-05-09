@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+      <img src="https://picsum.photos/id/101/400" onclick="openLightbox(0)" />
+      <img src="https://picsum.photos/id/102/400" onclick="openLightbox(1)" />
+      <img src="https://picsum.photos/id/103/400" onclick="openLightbox(2)" />
+      <img src="https://picsum.photos/id/104/400" onclick="openLightbox(3)" />
+      <img src="https://picsum.photos/id/106/400" onclick="openLightbox(5)" />
+      <img src="https://picsum.photos/id/107/400" onclick="openLightbox(6)" />
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <img id="lightbox-img" />
+
+      <div class="controls">
+        <button onclick="prev()">⬅ Prev</button>
+        <button onclick="next()">Next ➡</button>
+        <button onclick="closeLightbox()">Close ❌</button>
+      </div>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
